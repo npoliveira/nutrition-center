@@ -1,4 +1,4 @@
-body {
+html {
     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
@@ -6,32 +6,11 @@ body {
 header {
     background-color: #333;
     height: 3em;
-    color: #FFF;
+    color: white;
     margin-bottom: 1em;
-}
-
-header h1 {
-    font-size: 2em;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-header h2 {
-    font-size: 2em;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-header {
     content: '';
-    display: inline-block;
+    display: block;
     height: 100%;
-    vertical-align: middle;
-}
-
-section {
-    margin: 2em 0;
-    overflow: hidden;
 }
 
 section h2 {
@@ -46,7 +25,6 @@ table {
     width: 100%;
     margin-bottom: .5em;
     table-layout: fixed;
-
 }
 
 td, th {
@@ -61,39 +39,8 @@ th {
     background-color: #EEE;
 }
 
-label {
-    color: #555;
-    display: block;
-    margin-bottom: .2em;
-}
-
-}
-
-button {
-    padding: .5em 2em;
-    border: 0;
-    border-bottom: 3px solid;
-    font-size: 1.2em;
-    cursor: pointer;
-    margin: 0;
-    margin-top: -3px;
-    color: #fff;
-    background-color: #0c8cd3;
-    border-color: #04324c;
-    width: 20%;
-    display: block;
-    clear: both;
-    margin: 10px 0px;
-
-}
-
-button:active {
-    margin-top: 0px;
-    border: 0;
-}
-
-button[disabled=disabled], button:disabled {
-    background-color: gray;
-    border-color: darkgray;
-
+.container {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
 }
