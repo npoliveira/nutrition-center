@@ -44,3 +44,7 @@ th {
     height: 100%;
     margin: 0 auto;
 }
+
+.dado-invalido {
+    background-color: lightcoral;
+}
