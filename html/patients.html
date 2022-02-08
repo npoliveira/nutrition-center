@@ -15,7 +15,7 @@
     </header>
     <main>
         <section class="container">
-            <h2>Meus pacientes</h2>
+            <h2>My patient</h2>
             <table>
                 <thead>
                     <tr>
@@ -73,6 +73,28 @@
             </table>
         </section>
     </main>
+    <section class="container">
+        <h3 id="titulo-form">Add new patient</h3>
+        <form id="form-adiciona">
+            <div class="grupo">
+                <label> Name:</label>
+                <input id="nome" name="nome" type="text" placeholder="Name" class="campo">
+            </div>
+            <div class="grupo">
+                <label>Weight(kg)</label>
+                <input id="peso" name="peso" type="text" placeholder="Weight(kg)" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label>Height(m)</label>
+                <input id="altura" name="altura" type="text" placeholder="Height(m)" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label>Body fat(%)</label>
+                <input id="gordura" type="text" placeholder="Body fat(%)" class="campo campo-medio">
+            </div>
+            <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+        </form>
+    </section>
     <script src="../js/starting.js"></script>
 </body>
 </html>
