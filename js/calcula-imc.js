@@ -1,3 +1,6 @@
+let titulo = document.querySelector(".titulo");
+titulo.textContent = "Oliveira Nutrition Center";
+
 let pacientes = document.querySelectorAll(".paciente");
 
 for (let i = 0; i < pacientes.length; i++) {
@@ -26,7 +29,14 @@ for (let i = 0; i < pacientes.length; i++) {
         paciente.classList.add("dado-invalido");
     }
     if (alturaEhValida && pesoEhValido) {
-        let imc = peso / (altura * altura);
-        tdImc.textContent = imc.toFixed(2);
+        let imc = calculaImc(peso, altura);
+        tdImc.textContent = imc;
     }
+}
+
+function calculaImc(peso, altura) { // function extraida para ser usada em outra parte do codigo
+    let imc = 0;
+    imc = peso / (altura * altura);
+
+    return imc.toFixed(2);
 }
