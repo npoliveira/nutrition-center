@@ -35,6 +35,7 @@ for (let i = 0; i < pacientes.length; i++) {
 }
 
 function calculaImc(peso, altura) { // function extraida para ser usada em outra parte do codigo
+
     let imc = 0;
     imc = peso / (altura * altura);
 
