@@ -119,3 +119,7 @@ button[disabled=disabled], button:disabled {
 .adicionar-paciente {
     margin-top: 30px;
 }
+
+#mensagens-erro {
+    color: red;
+}
